@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
+import CaesarCipher from './components/CaesarCipher';
+import MonoalphabeticCipher from './components/MonoalphabeticCipher';
+import VigenereCipher from './components/VigenereCipher';
+import VernamCipher from './components/VernamCipher';
+import HillCipher from './components/HillCipher';
+import PlayfairCipher from './components/PlayfairCipher';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Cipher Animations</h1>
+      <CaesarCipher />
+      <MonoalphabeticCipher />
+      <VigenereCipher />
+      <VernamCipher />
+      <HillCipher />
+      <PlayfairCipher />
     </div>
   );
 }
